@@ -1999,4 +1999,4 @@ const input = `191
 10525
 10526`;
 
-module.exports = { input };
+module.exports = input;

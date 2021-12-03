@@ -1,9 +1,3 @@
-const { input } = require("./input");
-
-function toNumberList(numberListAsMultiLineText) {
-  return numberListAsMultiLineText.split(`\n`).map((n) => Number.parseInt(n));
-}
-
 function getIncreaseCount(numberList) {
   return numberList.reduce((acc, item, index, list) => {
     if (index === 0) return acc;
@@ -14,5 +8,4 @@ function getIncreaseCount(numberList) {
 
 module.exports = {
   getIncreaseCount,
-  toNumberList,
 };

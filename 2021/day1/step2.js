@@ -1,4 +1,3 @@
-const { input } = require("./input");
 const { getIncreaseCount } = require("./step1");
 
 function getSlidingWindowsIncreaseCount(numberList) {
