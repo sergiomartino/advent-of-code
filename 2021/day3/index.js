@@ -1,5 +1,5 @@
 const input = require("./input");
-const { toBinaryList } = require("./utils");
+const { toBinaryList } = require("../utils");
 const { calculatePowerConsumption } = require("./step1");
 const { calculateLifeSupportRating } = require("./step2");
 

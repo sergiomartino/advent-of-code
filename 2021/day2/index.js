@@ -1,5 +1,5 @@
 const input = require("./input");
-const { toCommandList } = require("./utils");
+const { toCommandList } = require("./helper");
 const step1 = require("./step1");
 const step2 = require("./step2");
 

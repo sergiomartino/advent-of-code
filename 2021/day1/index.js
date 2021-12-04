@@ -1,5 +1,5 @@
 const input = require("./input");
-const { toNumberList } = require("./utils");
+const { toNumberList } = require("../utils");
 const { getIncreaseCount } = require("./step1");
 const { getSlidingWindowsIncreaseCount } = require("./step2");
 

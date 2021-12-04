@@ -1,4 +1,5 @@
-const { toDecimal, moreCommonCountsFilter, leastCommonCountsFilter } = require("./utils");
+const { moreCommonCountsFilter, leastCommonCountsFilter } = require("./helper");
+const { toDecimal } = require("../utils");
 
 function calculateRating(calculateCounts) {
   return function calculateRatingByCommonCriteria(binaryList, index = 0) {

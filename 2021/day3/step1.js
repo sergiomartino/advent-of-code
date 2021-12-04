@@ -1,4 +1,5 @@
-const { toDecimal, invertIntBoolean, calculateCommonCounts } = require("./utils");
+const { calculateCommonCounts } = require("./helper");
+const { invertIntBoolean, toDecimal } = require('../utils');
 
 function calculatePowerConsumption(binaryList) {
   const [, gamma] = calculateCommonCounts(binaryList);
