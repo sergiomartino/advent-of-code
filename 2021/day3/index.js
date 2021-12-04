@@ -1,5 +1,7 @@
 const input = require("./input");
 const { toBinaryList } = require("./utils");
-const { getPowerConsumption } = require("./step1");
+const { calculatePowerConsumption } = require("./step1");
+const { calculateLifeSupportRating } = require("./step2");
 
-console.log("Step1:", getPowerConsumption(toBinaryList(input)));
+console.log("Step1:", calculatePowerConsumption(toBinaryList(input)));
+console.log("Step2:", calculateLifeSupportRating(toBinaryList(input)));
