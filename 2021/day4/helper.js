@@ -1,6 +1,6 @@
 const { chunkHorizontally, truthy } = require("../utils");
 
-function extractDrawAndBoards(input, size) {
+function extractDrawAndBoards(input, boardSize) {
   const [draw, , ...boards] = input.split("\n");
   return [
     draw,
@@ -9,10 +9,10 @@ function extractDrawAndBoards(input, size) {
         .filter(truthy)
         .map((board) => board.split(" ").filter(truthy))
         .flat(),
-      size ** 2
+      boardSize ** 2
     ).map((board) => ({
       board,
-      marked: Array.from({ length: size ** 2 }, () => false),
+      marked: Array.from({ length: boardSize ** 2 }, () => false),
     })),
   ];
 }
