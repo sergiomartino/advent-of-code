@@ -11,9 +11,9 @@ function getLastWinningBoard(draws, boards, boardSize) {
   return draws
     .split(",")
     .map((draw, drawCount) =>
-      boards.map((desc) => {
-        if (desc.winningDraw > -1) return desc;
-        return decorateWithWin(decorateWithMark(desc, draw), boardSize, draw, drawCount);
+      boards.map((board) => {
+        if (board.winningDraw > -1) return board;
+        return decorateWithWin(decorateWithMark(board, draw), boardSize, draw, drawCount);
       })
     )
     .flat()
