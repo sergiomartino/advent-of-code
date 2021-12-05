@@ -13,6 +13,8 @@ function extractDrawAndBoards(input, boardSize) {
     ).map((board) => ({
       board,
       marked: Array.from({ length: boardSize ** 2 }, () => false),
+      winningCall: -1,
+      winningDraw: -1,
     })),
   ];
 }

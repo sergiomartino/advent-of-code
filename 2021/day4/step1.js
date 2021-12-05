@@ -12,7 +12,7 @@ function getSum(winningBoard, markedWinningBoard, lastCall) {
     winningBoard
       .map(toNumber)
       .filter((_, index) => !markedWinningBoard[index])
-      .reduce((a, b) => a + b) * lastCall
+      .reduce((a, b) => a + b, 0) * lastCall
   );
 }
 
@@ -27,7 +27,7 @@ function getWinningBoard(draws, boards, boardSize) {
     }
   }
 
-  return null;
+  return [];
 }
 
 function validate(marked, boardSize) {
@@ -37,4 +37,6 @@ function validate(marked, boardSize) {
 
 module.exports = {
   firstWinner,
+  validate,
+  getSum,
 };
